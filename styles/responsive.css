@@ -1,0 +1,79 @@
+@media (max-width: 83rem) {
+    .contact .row {
+        justify-content: center;
+    }
+
+    .portfolio-card,
+    .contact .row .contact-info-card {
+        flex: 0 0 80%;
+        max-width: 80%;
+    }
+
+    .home-info {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 75rem) {
+    .aside {
+        left: -17rem;
+    }
+
+    .main-content .home-img {
+        display: none;
+    }
+
+    .main-content {
+        padding-left: 0;
+    }
+
+    .about, .portfolio, .contact {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .info-card p span {
+        display: block;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 62rem) {
+    .home .home-info {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .portfolio-card, .contact-info-card {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding-left: 1rem;
+    }
+
+    #logos li {
+        margin: 0 1rem;
+        height: 200%;
+    }
+}
+
+@media (max-width: 48rem) {
+    .skills, .personal-info,
+    .education, .experience,
+    .portfolio-card, .contact-form .col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    #portfolio .row:nth-child(3) {
+        justify-content: center;
+    }
+
+    #portfolio .portfolio-card .face.face1 {
+        min-width: 100%;
+    }
+
+    #logos li {
+        margin: 0 .5rem;
+    }
+}
