@@ -10,15 +10,15 @@
         justify-content: center;
     }
 
+    .home-info {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
     .portfolio-card,
     .contact .row .contact-info-card {
         flex: 0 0 80%;
         max-width: 80%;
-    }
-
-    .home-info {
-        flex: 0 0 100%;
-        max-width: 100%;
     }
 }
 
@@ -27,12 +27,12 @@
         left: -17rem;
     }
 
-    .scroll-down {
-        padding-left: 3rem;
-    }
-
     .main-content .home-img {
         display: none;
+    }
+
+    .scroll-down {
+        padding-left: 3rem;
     }
 
     .home .home-info {
