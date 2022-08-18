@@ -37,7 +37,7 @@
 
 #portfolio .portfolio-card .face.face1 {
     position: relative;
-    background: #333;
+    background: var(--bg-black-50);
     display: flex;
     justify-content: center;
     align-content:center;
@@ -79,13 +79,13 @@
 
 .portfolio-card .face.face1 .port-content i {
     font-size: 3em;
-    color: white;
+    color: var(--text-black-900);
     display: inline-block;
 }
 
 .portfolio-card .face.face1 .port-content h3 {
     font-size: 1em;
-    color: white;
+    color: var(--text-black-900);
     text-align: center;
 }
 

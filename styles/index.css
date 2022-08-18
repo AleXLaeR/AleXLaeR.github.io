@@ -55,6 +55,10 @@ body {
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 ::before, ::after {
     box-sizing: border-box;
 }
@@ -176,14 +180,14 @@ ul {
 }
 
 .aside .logo a:hover {
-    color: #d84400;
+    color: var(--primary-color);
 }
 
 .aside .logo a:hover::before,
 .aside .logo a:hover::after {
     width: 100%;
     height: 100%;
-    border-color: #d84400;
+    border-color: var(--primary-color);
 }
 
 .aside .nav-toggler {
@@ -240,6 +244,12 @@ ul {
 
 .aside .nav li:hover {
     background-color: #ffdbe9;
+    border-radius: 6px;
+    padding-bottom: .25rem;
+}
+
+body.dark .aside .nav li:hover {
+    background-color: #bb6084;
     border-radius: 6px;
     padding-bottom: .25rem;
 }
@@ -344,4 +354,60 @@ h3.my-profession {
 
 .home .home-img img:hover {
     transform: scale(1.1);
+}
+
+
+.scroll-down {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 0;
+    width: 100%;
+    margin-left: 5rem;
+}
+
+.mouse-wrapper {
+    font-size: 1rem;
+    display: block;
+    margin: auto;
+    max-width: 100px;
+    text-align: center;
+    color: var(--text-black-700);
+}
+
+.mouse {
+    border: 2px solid var(--text-black-700);
+    display: block;
+    height: 2.25rem;
+    width: 1.5rem;
+    margin: auto auto .25rem;
+    border-radius: 1.25rem;
+    position: relative;
+}
+
+.mouse .wheel {
+    background-color: var(--text-black-700);
+    border-radius: 50%;
+    width: .35rem;
+    height: .35rem;
+    position: absolute;
+
+    top: .5rem;
+    left: 37%;
+    display: block;
+    animation: mouse-jump 2s linear infinite;
+}
+
+@keyframes mouse-jump {
+    0% {
+        top: 20%;
+    }
+    35% {
+        top: 60%;
+    }
+    50% {
+        top: 60%;
+    }
+    100% {
+        top: 20%;
+    }
 }

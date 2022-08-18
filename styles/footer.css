@@ -78,11 +78,6 @@ footer {
     transition: 0.3s all ease-in-out;
 }
 
-#logos li a:hover::after {
-    opacity: 0;
-    transform: scale(3);
-}
-
 #logos li a img {
     width: 2.5rem;
     height: 2.5rem;
