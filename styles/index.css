@@ -77,10 +77,6 @@ ul {
     opacity: 1;
 }
 
-.main-content {
-    padding-left: 17rem;
-}
-
 .padd-15 {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -89,7 +85,11 @@ ul {
 .container {
     max-width: 80rem;
     width: 100%;
-    margin: auto; <!-- -->
+    margin: auto;
+}
+
+.main-content {
+    padding-left: 17rem;
 }
 
 .row {
