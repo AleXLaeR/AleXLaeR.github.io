@@ -1,9 +1,9 @@
 .skill .section-title {
-    margin-top: -250px;
+    margin-top: -15.625rem;
 }
 
 .skill .portfolio-heading {
-    margin-top: -100px;
+    margin-top: -6.25rem;
 }
 
 .skill {
@@ -67,7 +67,7 @@
 }
 
 .skill li > span {
-    padding-inline-start: 0.5rem;
+    padding-inline-start: .5rem;
     color: white;
 }
 
@@ -78,13 +78,13 @@
     transform: translateY(-50%);
     display: flex;
     flex-direction: column;
-    gap: 0.125rem;
+    gap: .125rem;
 }
 
 .skill .controls button {
     width: 1.5rem;
     aspect-ratio: 1;
-    font-size: 0.9rem;
+    font-size: .9rem;
     color: white;
     border: none;
     background: #39657e;

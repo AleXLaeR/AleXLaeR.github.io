@@ -1,3 +1,10 @@
+@media (max-width: 94rem) {
+    .main-content .home-img::before,
+    .main-content .home-img::after {
+        display: none;
+    }
+}
+
 @media (max-width: 83rem) {
     .contact .row {
         justify-content: center;
@@ -28,6 +35,11 @@
         display: none;
     }
 
+    .home .home-info {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
     .main-content {
         padding-left: 0;
     }
@@ -44,11 +56,6 @@
 }
 
 @media (max-width: 62rem) {
-    .home .home-info {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-
     .portfolio-card, .contact-info-card {
         flex: 0 0 50%;
         max-width: 50%;
