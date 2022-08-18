@@ -34,3 +34,12 @@ function sendMail() {
         window.location.href = link;
 }
 
+window.addEventListener('scroll', (e) => {
+        const scrollDownEl = document.querySelector('.scroll-down');
+        if (document.querySelector('.nav a').classList.contains('active')) {
+                scrollDownEl.classList.remove('hidden');
+        } else {
+                scrollDownEl.classList.add('hidden');
+        }
+})
+

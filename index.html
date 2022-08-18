@@ -12,6 +12,7 @@
   <link href="styles/about-section.css" rel="stylesheet">
   <link href="styles/portfolio-section.css" rel="stylesheet">
   <link href="styles/contact-section.css" rel="stylesheet">
+  <link href="styles/skills-section.css" rel="stylesheet">
   <link href="styles/footer.css" rel="stylesheet">
   <link href="styles/home-animation.css" rel="stylesheet">
   <link href="styles/style-switcher.css" rel="stylesheet">
@@ -56,8 +57,9 @@
         <span></span>
       </div>
       <ul class="nav">
-        <li><a href="" class="active"><i class="fa fa-home"></i>Home</a></li>
+        <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
         <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
+        <li><a href="#skills"><i class="fa-solid fa-ranking-star"></i>Skills</a></li>
         <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
         <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
       </ul>
@@ -294,6 +296,29 @@
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="skill">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Skills</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="portfolio-heading padd-15">
+              <h2>My personal skills: </h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="skill-container">
+              <ul></ul>
+              <div class="controls">
+                <button onclick="adjustDay(-1)">▲</button>
+                <button onclick="adjustDay(1)">▼</button>
               </div>
             </div>
           </div>
@@ -537,5 +562,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
   <script src="script.js"></script>
   <script src="style-switcher.js"></script>
+  <script src="skills.js"></script>
 </body>
 </html>

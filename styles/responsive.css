@@ -13,6 +13,10 @@
         flex: 0 0 100%;
         max-width: 100%;
     }
+
+    .scroll-down {
+        padding-left: 3rem;
+    }
 }
 
 @media (max-width: 75rem) {
@@ -28,7 +32,7 @@
         padding-left: 0;
     }
 
-    .about, .portfolio, .contact {
+    .skill, .about, .portfolio, .contact {
         padding-left: 1rem;
         padding-right: 1rem;
     }
@@ -75,5 +79,9 @@
 
     #logos li {
         margin: 0 .5rem;
+    }
+
+    h3.my-profession {
+        font-size: 1.9rem;
     }
 }
