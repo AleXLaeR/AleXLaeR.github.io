@@ -96,3 +96,26 @@
         display: block;
     }
 }
+
+@media (max-width: 29rem) {
+    .scroll-down {
+        display: none;
+    }
+
+    .skill .section-title {
+        margin-top: 0;
+    }
+
+    .skill .portfolio-heading {
+        margin-top: 0;
+    }
+
+    .skill .skill-container {
+        width: 80%;
+        padding-bottom: 12rem;
+    }
+
+    footer {
+        padding: 1.625rem 2.625rem;
+    }
+}
