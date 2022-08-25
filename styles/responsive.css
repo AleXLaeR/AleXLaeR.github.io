@@ -27,6 +27,10 @@
         left: -17rem;
     }
 
+    .mobile-drawer {
+        display: block;
+    }
+
     .main-content .home-img {
         display: none;
     }

@@ -15,6 +15,7 @@
   <link href="styles/skills-section.css" rel="stylesheet">
   <link href="styles/footer.css" rel="stylesheet">
   <link href="styles/home-animation.css" rel="stylesheet">
+  <link href="styles/mobile-drawer.css" rel="stylesheet">
   <link href="styles/style-switcher.css" rel="stylesheet">
   <link href="styles/responsive.css" rel="stylesheet">
 
@@ -65,6 +66,21 @@
       </ul>
     </div>
     <div class="main-content">
+      <section class="mobile-drawer">
+        <button type="button" id="menu" onclick="toggleMenu()">
+          <span></span><span></span><span></span><span></span>
+        </button>
+
+        <nav id="menuItem">
+          <a href="#home" class="active"><i class="fa fa-home"></i>Home</a>
+          <a href="#about"><i class="fa fa-user"></i>About</a>
+          <a href="#skills"><i class="fa-solid fa-ranking-star"></i>Skills</a>
+          <a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a>
+          <a href="#contact"><i class="fa fa-comments"></i>Contact</a>
+        </nav>
+
+        <section></section>
+      </section>
       <section class="home">
         <ul id="shape">
           <li></li>
@@ -542,6 +558,7 @@
       </footer>
       </div>
     </div>
+
   <div class="style-switcher">
       <div class="style-switcher-toggler s-icon">
         <i class="fas fa-cog fa-spin"></i>
@@ -561,6 +578,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
   <script src="scripts/script.js"></script>
+  <script src="scripts/mobile-drawer.js"></script>
   <script src="scripts/style-switcher.js"></script>
   <script src="scripts/skills.js"></script>
 </body>

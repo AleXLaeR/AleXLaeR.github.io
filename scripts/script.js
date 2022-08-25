@@ -12,7 +12,7 @@ const nav = document.querySelector('.nav'),
 
 for (let i = 0; i < totalNavListLength; i++) {
         const anchorElement = navList[i].querySelector('a');
-        anchorElement.addEventListener('click', function() {
+        anchorElement.addEventListener('click', () => {
                 for (let j = 0; j < totalNavListLength; j++) {
                         navList[j].querySelector('a')
                             .classList.remove('active');
@@ -42,4 +42,3 @@ window.addEventListener('scroll', (e) => {
                 scrollDownEl.classList.add('hidden');
         }
 })
-
