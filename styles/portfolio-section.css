@@ -97,7 +97,7 @@
     position: relative;
     background: whitesmoke;
     display: flex;
-    align-items: center;
+
     justify-content: center;
     padding: 1.25rem;
     box-sizing: border-box;
@@ -125,6 +125,8 @@
     padding: 10px;
     margin: 15px 0 0;
     display: inline-block;
+    position: fixed;
+    top: 68%;
 }
 
 

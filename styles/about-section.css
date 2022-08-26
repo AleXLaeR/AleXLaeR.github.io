@@ -137,6 +137,20 @@
     text-transform: capitalize;
 }
 
+#lc {
+    text-transform: lowercase;
+}
+
+#course-list {
+    list-style: initial;
+}
+
+#course-list li {
+    color: var(--text-black-900);
+    margin-left: 1rem;
+    margin-top: .5rem;
+}
+
 .progress {
     background-color: var(--bg-black-50);
     height: .45rem;

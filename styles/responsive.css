@@ -67,7 +67,6 @@
     }
 
     #logos li {
-        margin: 0 1rem;
         height: 200%;
     }
 }
@@ -89,7 +88,7 @@
     }
 
     #logos li {
-        margin: 0 .5rem;
+        margin: 0 1.5rem;
     }
 
     h3.my-profession {
@@ -117,6 +116,10 @@
     .skill .skill-container {
         width: 80%;
         padding-bottom: 12rem;
+    }
+
+    #logos li {
+        margin: 0 .5rem;
     }
 
     footer {

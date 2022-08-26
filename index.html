@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/imagehover.css/2.0.0/css/imagehover.min.css" integrity="sha512-SYBBAnJsPEzSQ/kBqkR/9krJ+EUgF624c8uaMBww1Q26pnCw5k7zVmtc48BfXjZ9MRNNBveIdhx/na1xRLWgjw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
   <link href="styles/index.css" rel="stylesheet">
   <link href="styles/about-section.css" rel="stylesheet">
@@ -66,7 +66,7 @@
       </ul>
     </div>
     <div class="main-content">
-      <section class="mobile-drawer">
+      <div class="mobile-drawer">
         <button type="button" id="menu" onclick="toggleMenu()">
           <span></span><span></span><span></span><span></span>
         </button>
@@ -80,7 +80,7 @@
         </nav>
 
         <section></section>
-      </section>
+      </div>
       <section class="home">
         <ul id="shape">
           <li></li>
@@ -102,11 +102,11 @@
                 I'm a <span class="typing"></span>
               </h3>
               <p>
-                I am a zest for solving innovative problems. My key
-                specializations are Python Big Data Engineering, and C#/.NET Web
-                Development. I focus on: theoretical and practical Computer Science,
-                Object-Oriented Programming, Applied Mathematics, and Algorithms.
-                I have repeatedly won prizes at Olympiads in Programming and Mathematics.
+                I am a 3-year university student of Computer Science specialty and a trainee .NET Web Developer open to internship and/or work right now!
+
+              I have repeatedly won prizes at Olympiads in Programming and Mathematics.
+              My main focuses are: theoretical and practical Computer Science,
+              Object-Oriented Programming, Algorithms and Data Structures, and Applied Mathematics.
               </p>
               <a href="#about" class="btn">More About Me</a>
             </div>
@@ -141,13 +141,13 @@
                     I'm Olexander Lazarenko, aspiring <span>.NET Web Developer</span>
                   </h3>
                   <p>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                    mollit anim id est laborum"...
+                    During my university and self-teaching studies I gained the following skills:
+                    <br>Advanced knowledge of C#, JavaScript, SQL, HTML/CSS, Java and Python languages, Django, Spring and ASP.NET Core MVC;
+                    <br>Experience in building web applications and pet projects with ASP.NET Core, Node.js, React, Django.
+                    <br>As a student of Mathematics & Computer Science, I obtained profound knowledge in Linear Algebra, Analytical Geometry, Calculus,
+                    <br>Discrete Math, Theory of Probability, SOLID principles and am ready for their practical use in the Front- and Back-End development.
+                    <br>As a developer, I try to be very scrupulous but realistic, i.e. prefer to deliver functionality first and then to improve the code quality.
+                    <br>My English proficiency in each, Reading/Writing/Speaking, is Fluent.
                   </p>
                 </div>
               </div>
@@ -189,7 +189,7 @@
                 <div class="skills padd-15">
                   <div class="row">
                     <div class="skill-card padd-15">
-                      <h5>HTML/CSS</h5>
+                      <h5>ASP.NET Core Web Development</h5>
                       <div class="progress">
                         <div class="progress-in" style="width: 78%;">
                           <div class="skill-percent">78%</div>
@@ -197,7 +197,7 @@
                       </div>
                     </div>
                     <div class="skill-card padd-15">
-                      <h5>Asp.Net MVC</h5>
+                      <h5>Node.<span id="lc">js</span> Backend Development</h5>
                       <div class="progress">
                         <div class="progress-in" style="width: 82%;">
                           <div class="skill-percent">82%</div>
@@ -205,7 +205,7 @@
                       </div>
                     </div>
                     <div class="skill-card padd-15">
-                      <h5>Python</h5>
+                      <h5>React Frontend Development</h5>
                       <div class="progress">
                         <div class="progress-in" style="width: 90%;">
                           <div class="skill-percent">90%</div>
@@ -213,15 +213,7 @@
                       </div>
                     </div>
                     <div class="skill-card padd-15">
-                      <h5>.NET Framework/Core</h5>
-                      <div class="progress">
-                        <div class="progress-in" style="width: 92%;">
-                          <div class="skill-percent">92%</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="skill-card padd-15">
-                      <h5>C#</h5>
+                      <h5>Java Spring MVC</h5>
                       <div class="progress">
                         <div class="progress-in" style="width:95%;">
                           <div class="skill-percent">95%</div>
@@ -229,10 +221,18 @@
                       </div>
                     </div>
                     <div class="skill-card padd-15">
-                      <h5>JS</h5>
+                      <h5>Django Full Stack Development</h5>
                       <div class="progress">
                         <div class="progress-in" style="width: 80%;">
                           <div class="skill-percent">80%</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skill-card padd-15">
+                      <h5>Docker / Kubernetes in Development</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 92%;">
+                          <div class="skill-percent">92%</div>
                         </div>
                       </div>
                     </div>
@@ -248,37 +248,37 @@
                         <div class="timeline-card">
                           <div class="circle-dot"></div>
                           <h3 class="timeline-date">
-                            <i class="fa fa-calendar-alt"></i> 2020 - 2024
+                            <i class="fa fa-calendar-alt"></i> Sep 2020 - Jul 2024
                           </h3>
                           <h4 class="timeline-title">
-                            Master in Computer Science
+                            Bachelor in Computer Science
                           </h4>
                           <p class="timeline-text">
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                            mollit anim id est laborum"...
+                            <strong>V.N. Karazin Kharkiv National University (Ukraine)</strong>
+                            <br><br>My training included the study of Algorithms and Data Structures, Discrete Math, Architecture of Computational
+                            Systems, Operational Systems, Object-Oriented Programming in C++/Java,
+                            Relational Databases, Technologies of Web-Programming.
+                            <br>After graduation, I will receive two diplomas: a bachelor's degree in CS and an Analyst of Informational Systems.
                           </p>
                         </div>
                         <div class="timeline-card">
                           <div class="circle-dot"></div>
                           <h3 class="timeline-date">
-                            <i class="fa fa-calendar-check"></i> 2020 - 2024
+                            <i class="fa fa-calendar-check"></i> 2021 - 2022
                           </h3>
                           <h4 class="timeline-title">
-                            Master in Computer Science
+                            Completed Courses & Trainings
                           </h4>
                           <p class="timeline-text">
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                            mollit anim id est laborum"...
+                            <ul id="course-list">
+                              <li>Dmitri Nesteruk: Design Patterns in C# and .NET (2022);</li>
+                              <li>Maximilian Schwarzmüller: Docker & Kubernetes: The Practical Guide (2022);</li>
+                              <li>Maximilian Schwarzmüller: React - The Complete Guide (Hooks, React Router, Redux) (2022);</li>
+                              <li>Maximilian Schwarzmüller: 100 Days Of Code - Web Development Bootcamp (2022);</li>
+                              <li>Maximilian Schwarzmüller: NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno) (2022);</li>
+                              <li>SQL - The Complete Developer's Guide (MySQL, PostgreSQL) (2021);</li>
+                              <li>Dzianis Matveyenka: SQL (2022);</li>
+                            </ul>
                           </p>
                         </div>
                       </div>
@@ -293,19 +293,18 @@
                         <div class="timeline-card">
                           <div class="circle-dot"></div>
                           <h3 class="timeline-date">
-                            <i class="fa fa-calculator"></i> 2020 - 2024
+                            <i class="fa fa-calculator"></i> Sep - Nov 2022
                           </h3>
                           <h4 class="timeline-title">
-                            Master in Computer Science
+                            SoftServe IT Academy C# Online Marathon
                           </h4>
                           <p class="timeline-text">
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                            mollit anim id est laborum"...
+                            During this training I received in-depth knowledge in creation of
+                            web-applications with ASP.Net Core MVC, SOLID principles,
+                            Version Control with GitHub. Also, I was working with the databases
+                            (SQL, EntityFrameworkCore, Linq to SQL), Multithreading and concurrency
+                            (Threads, TPL, Asynchronous programming), Unit testing of web application
+                            with NUnit.
                           </p>
                         </div>
                       </div>
@@ -326,7 +325,7 @@
           </div>
           <div class="row">
             <div class="portfolio-heading padd-15">
-              <h2>My personal skills: </h2>
+              <h2>My soft skills: </h2>
             </div>
           </div>
           <div class="row">
@@ -356,84 +355,99 @@
             <div class="portfolio-card padd-15">
               <div class="face face1">
                 <div class="port-content">
-                  <div class="icon"><i class="fab fa-windows"></i></div>
-                  <h3>Windows</h3>
+                  <div class="icon"><i class="fab fa-node"></i></div>
+                  <h3>ECommerce Online Shop</h3>
                 </div>
               </div>
               <div class="face face2">
                 <div class="port-content">
-                  <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia molestias vitae fugiat aspernatur alias corporis?</p>
-                  <a href="#" type="button">Read More</a>
+                  <p>This is a complete online eCommerce shop built using only HTML,
+                    CSS on the frontend and Node.js on the backend. Stack of
+                    technologies used in this project: HTML, CSS, browser- and
+                    server-side JS, Node.js, Express.js, EJS, MongoDB, MVC Pattern,
+                    Stripe API!
+                  </p>
+                  <a href="https://github.com/AleXLaeR/ECommerce-Online-Shop" type="button">Read More</a>
                 </div>
               </div>
             </div>
             <div class="portfolio-card padd-15">
               <div class="face face1">
                 <div class="port-content">
-                  <i class="fab fa-android"></i>
-                  <h3>Android</h3>
+                  <i class="fab fa-html5"></i>
+                  <h3>Portfolio Website</h3>
                 </div>
               </div>
               <div class="face face2">
                 <div class="port-content">
-                  <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia molestias vitae fugiat aspernatur alias corporis?</p>
-                  <a href="#" type="button">Read More</a>
+                  <p>Check out the complete code for this (my first) portfolio website,
+                    which is built using only HTML, CSS and browser-side JS on my GitHub!
+                  </p>
+                  <a href="https://github.com/AleXLaeR/AleXLaeR.github.io" type="button">Read More</a>
                 </div>
               </div>
             </div>
             <div class="portfolio-card padd-15">
               <div class="face face1">
                 <div class="port-content">
-                  <i class="fab fa-apple"></i>
-                  <h3>Apple</h3>
+                  <i class="fab fa-js"></i>
+                  <h3>Online Tic-Tac-Toe Game</h3>
                 </div>
               </div>
               <div class="face face2">
                 <div class="port-content">
-                  <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia molestias vitae fugiat aspernatur alias corporis?</p>
-                  <a href="#" type="button">Read More</a>
+                  <p>Simple Tic-Tac-Toe two-player game built using HTML, CSS
+                    and JS and, of course - a lot of love!</p>
+                  <a href="https://alexlaer.github.io/tic-tac-toe-game/" type="button">Read More</a>
                 </div>
               </div>
             </div>
             <div class="portfolio-card padd-15">
               <div class="face face1">
                 <div class="port-content">
-                  <i class="fab fa-apple"></i>
-                  <h3>Apple</h3>
+                  <i class="fab fa-telegram"></i>
+                  <h3>Telegram Product Store Bot</h3>
                 </div>
               </div>
               <div class="face face2">
                 <div class="port-content">
-                  <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia molestias vitae fugiat aspernatur alias corporis?</p>
-                  <a href="#" type="button">Read More</a>
+                  <p>This telegram bot was specifically designed
+                    for sales representatives, storekeepers,
+                    as well as commercial organizations engaged in wholesale and retail trade.
+                    By using this application, one can easily accept an order from a
+                    client, and bot will itself redirect it to the storekeeper.</p>
+                  <a href="https://github.com/AleXLaeR/Telegram-Bot-Product-Store" type="button">Read More</a>
                 </div>
               </div>
             </div>
             <div class="portfolio-card padd-15">
               <div class="face face1">
                 <div class="port-content">
-                  <i class="fab fa-apple"></i>
-                  <h3>Apple</h3>
+                  <i class="fa fa-user-group"></i>
+                  <h3>Social Media Website</h3>
                 </div>
               </div>
               <div class="face face2">
                 <div class="port-content">
-                  <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia molestias vitae fugiat aspernatur alias corporis?</p>
-                  <a href="#" type="button">Read More</a>
+                  <p>Full Stack Social Media Website written using Python Django
+                    with MVC pattern on the back-end and HTML, CSS and JS on the
+                    front-end.</p>
+                  <a href="https://github.com/AleXLaeR/Django-Social_Media_Website" type="button">Read More</a>
                 </div>
               </div>
             </div>
             <div class="portfolio-card padd-15">
               <div class="face face1">
                 <div class="port-content">
-                  <i class="fab fa-apple"></i>
-                  <h3>Apple</h3>
+                  <i class="fab fa-python"></i>
+                  <h3>Drum Beat Machine</h3>
                 </div>
               </div>
               <div class="face face2">
                 <div class="port-content">
-                  <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia molestias vitae fugiat aspernatur alias corporis?</p>
-                  <a href="#" type="button">Read More</a>
+                  <p>Fully Functional Drum Machine (drum kit machine / beat maker) written
+                    using pure Python, PyGame, NumPy - and, of course - a lot of math!</p>
+                  <a href="https://github.com/AleXLaeR/Beat-Maker" type="button">Read More</a>
                 </div>
               </div>
             </div>
@@ -530,28 +544,23 @@
       <footer>
         <ul id="logos">
           <li>
-            <a href="https://www.linkedin.com">
+            <a href="https://www.linkedin.com/in/olexander-lazarenko-0537a4244/">
               <img src="images/linkedin.png" alt="Linkedin logo">
             </a>
           </li>
           <li>
-            <a href="https://github.com">
+            <a href=https://github.com/AleXLaeR?tab=repositories">
               <img src="images/github.jpg" alt="Github logo">
             </a>
           </li>
           <li>
-            <a href="https://telegram.com">
+            <a href="https:/t.me/AleXLaeR">
               <img src="images/telegram.png" alt="Telegram logo">
             </a>
           </li>
           <li>
-            <a href="https://viber.com">
+            <a href="viber://chat/?number=%2380950122558">
               <img src="images/viber.jpg" alt="Viber logo">
-            </a>
-          </li>
-          <li>
-            <a href="https://instagram.com">
-              <img src="images/insta.png" alt="Instagram logo">
             </a>
           </li>
         </ul>

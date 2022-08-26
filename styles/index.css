@@ -19,7 +19,7 @@
     --contact-card-color-2: #ffd0a8;
     --contact-card-border-color: #ffccb7;
 
-    --hamburger-menu-color: #ead0cc;
+    --hamburger-menu-color: #fdf9ff;
 }
 
 body.dark {
@@ -41,7 +41,7 @@ body.dark {
     --contact-card-color-1: #323131;
     --contact-card-color-2: #222222;
 
-    --hamburger-menu-color: #222222;
+    --hamburger-menu-color: #504f4f;
 }
 
 body {
@@ -367,6 +367,7 @@ h3.my-profession {
     left: 0;
     width: 95%;
     padding-left: 15rem;
+    opacity: 1;
 }
 
 .mouse-wrapper {
