@@ -74,6 +74,20 @@ ul#shape li:nth-child(8) {
     animation-delay: 6s;
 }
 
+ul#shape li:nth-child(9) {
+    width: 40px;
+    height: 40px;
+    left: 70%;
+    animation-delay: 5s;
+}
+
+ul#shape li:nth-child(10) {
+    width: 80px;
+    height: 80px;
+    left: 15%;
+    animation-delay: 11.5s;
+}
+
 @keyframes floating {
     from {
         transform: translateY(0) rotate(0deg);
@@ -82,7 +96,7 @@ ul#shape li:nth-child(8) {
     }
 
     to {
-        transform: translateY(-1000px) rotate(720deg);
+        transform: translateY(-1200px) rotate(720deg);
         opacity: 0;
         border-radius: 80%;
     }

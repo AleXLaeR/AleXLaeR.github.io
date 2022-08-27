@@ -113,6 +113,10 @@
         margin-top: 0;
     }
 
+    #university {
+        border-bottom: none;
+    }
+
     .skill .skill-container {
         width: 80%;
         padding-bottom: 12rem;

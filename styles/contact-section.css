@@ -54,7 +54,7 @@
 .contact-info-card p {
     font-size: 1rem;
     line-height: 1.5rem;
-    color: #504e70;
+    color: var(--text-black-700);
     font-weight: normal;
     margin-bottom: .5rem;
 }

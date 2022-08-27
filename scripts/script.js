@@ -1,6 +1,6 @@
 const typed = new Typed(
     ".typing", {
-        strings: ["Freelancer", ".NET Web Developer", "Big Data Engineer"],
+        strings: ["Freelancer", ".NET Web Developer"],
         typeSpeed: 100,
         BackSpeed: 80,
         loop: true

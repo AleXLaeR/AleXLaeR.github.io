@@ -172,13 +172,16 @@
     background-color: var(--primary-color);
 }
 
-.skill-percent {
+.about .about-content .skills .skill-card .skill-percent {
     position: absolute;
     right: 0;
     color: var(--text-black-900);
-    top: -2.5rem;
+    top: -40px;
     font-weight: normal;
-    line-height: 2.5rem;
+    margin-right: 0;
+    line-height: 40px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .education, .experience {
@@ -252,9 +255,8 @@ h3.title {
 
 .timeline-title {
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     margin-bottom: 1rem;
-    text-transform: capitalize;
     color: var(--text-black-900);
 }
 
@@ -268,6 +270,12 @@ h3.title {
 #freelance-availability {
     color: #16a832;
 }
+
+#university {
+    padding-bottom: .35rem;
+    border-bottom: 1px solid var(--text-black-700);
+}
+
 
 .shadow-dark {
     box-shadow: 0 0 1.25rem rgba(48, 46, 77, .25);

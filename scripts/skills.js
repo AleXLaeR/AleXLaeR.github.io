@@ -1,62 +1,68 @@
-const febHolidays = [
+const softSkills = [
     "Hungry Learner",
-    "Relations oriented",
-    "Team Player",
-    "Energetic",
-    "Organized Worker",
-    "Communicative",
-    "Responsible",
     "Hardworking",
-    "Systematic",
-    "Creative",
-    "Empathic",
-    "Optimistic",
-    "Passionate about coding",
-    "Motivated by result",
-    "Self-Balanced",
-    "Punctual",
-    "Helpful to others in need",
-    "Stress Tolerant",
-    "Ready to changes",
-    "Ability to resolve conflicts",
-    "Persistent in reaching goals",
     "Attentive to details",
     "Eagerness to self-growth",
-    "Independent in Development",
+    "Organized Worker",
+    "Creative",
+    "Passionate about coding",
     "Adaptive to new environment",
-    "Self-Planning ability",
+    "Ready to make changes",
+    "Motivated by result",
+    "Persistent in reaching goals",
+
+    "Team Player",
+    "Communicative",
+    "Empathic",
+    "Relations oriented",
+    "Helpful to others in need",
+    "Ability to resolve conflicts",
+    "Able for independent work",
+    "Able for self-planning",
+
+    "Energetic",
+    "Responsible",
+    "Systematic",
+    "Punctual",
+    "Optimistic",
+    "Stress tolerant",
+
+    "Self-balanced",
     "Adequate self-esteem",
 ];
 
 const ulEl = document.querySelector(".skill ul");
-const d = new Date();
-let dayNumber = d.getMonth() === 1 ? d.getDate() - 1 : 0;
+const date = new Date();
+let dayNumber = (date.getMonth() === 1) ? date.getDate() - 1 : 0;
 let activeIndex = dayNumber;
-const rotate = -360 / febHolidays.length;
+const rotateDegree = -360 / softSkills.length;
+
 init();
 
 function init() {
-    febHolidays.forEach((holiday, idx) => {
+    softSkills.forEach((skill, idx) => {
         const liEl = document.createElement("li");
         liEl.style.setProperty("--day_idx", idx);
-        liEl.innerHTML = `<time datetime="2022-02-${idx + 1}">${
-            idx + 1
-        }</time><span>${holiday}</span>`;
+        liEl.innerHTML = `<span>${idx + 1}</span><span>${skill}</span>`;
         ulEl.append(liEl);
     });
-    ulEl.style.setProperty("--rotateDegrees", rotate);
+    ulEl.style.setProperty("--rotateDegrees", rotateDegree);
     adjustDay(0);
 }
 
-function adjustDay(nr) {
-    dayNumber += nr;
+function adjustDay(forNumber) {
+    dayNumber += forNumber;
     ulEl.style.setProperty("--currentDay", dayNumber);
 
     const activeEl = document.querySelector(".skill ul > li.active");
-    if (activeEl) activeEl.classList.remove("active");
+    if (activeEl) {
+        activeEl.classList.remove("active");
+    }
 
-    activeIndex = (activeIndex + nr + febHolidays.length) % febHolidays.length;
-    const newActiveEl = document.querySelector(`.skill ul > li:nth-child(${activeIndex + 1})`);
+    activeIndex = (activeIndex + forNumber + softSkills.length) % softSkills.length;
+    const newActiveEl = document.querySelector(
+        `.skill ul > li:nth-child(${activeIndex + 1})`
+    );
     document.body.style.backgroundColor = window.getComputedStyle(
         newActiveEl
     ).backgroundColor;
