@@ -123,10 +123,19 @@
     box-sizing: border-box;
     outline : 1px dashed #333;
     padding: 10px;
-    margin: 15px 0 0;
-    display: inline-block;
+    margin: 15px 0;
+    display: block;
     position: fixed;
     top: 68%;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.face.face2 .port-content .buttons-container a {
+    position: static;
 }
 
 
