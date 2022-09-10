@@ -1,12 +1,14 @@
+@media (max-width: 100rem) {
+    .skill, .about, .portfolio, .contact {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
 @media (max-width: 94rem) {
     .main-content .home-img::before,
     .main-content .home-img::after {
         display: none;
-    }
-
-    .skill, .about, .portfolio, .contact {
-        padding-left: 1rem;
-        padding-right: 1rem;
     }
 }
 
