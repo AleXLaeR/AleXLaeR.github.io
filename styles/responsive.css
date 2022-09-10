@@ -3,6 +3,11 @@
     .main-content .home-img::after {
         display: none;
     }
+
+    .skill, .about, .portfolio, .contact {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }
 
 @media (max-width: 83rem) {
@@ -46,11 +51,6 @@
 
     .main-content {
         padding-left: 0;
-    }
-
-    .skill, .about, .portfolio, .contact {
-        padding-left: 1rem;
-        padding-right: 1rem;
     }
 
     .info-card p span {

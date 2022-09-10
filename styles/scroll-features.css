@@ -1,0 +1,94 @@
+.scroll-down {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 0;
+    width: 95%;
+    padding-left: 15rem;
+    opacity: 1;
+}
+
+.mouse-wrapper {
+    font-size: 1rem;
+    display: block;
+    margin: auto;
+    max-width: 6.25rem;
+    text-align: center;
+    color: var(--text-black-700);
+}
+
+.mouse {
+    border: 2px solid var(--text-black-700);
+    display: block;
+    height: 2.25rem;
+    width: 1.5rem;
+    margin: auto auto .25rem;
+    border-radius: 1.25rem;
+    position: relative;
+}
+
+.mouse .wheel {
+    background-color: var(--text-black-700);
+    border-radius: 50%;
+    width: .35rem;
+    height: .35rem;
+    position: absolute;
+    top: .5rem;
+    left: 37%;
+    display: block;
+    animation: mouse-jump 2s linear infinite;
+}
+
+@keyframes mouse-jump {
+    0% {
+        top: 20%;
+    }
+    35% {
+        top: 60%;
+    }
+    50% {
+        top: 60%;
+    }
+    100% {
+        top: 20%;
+    }
+}
+
+#back-to-top-button {
+    display: inline-block;
+    background-color: #ff9800;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+#back-to-top-button::after {
+    content: "\f077";
+    font-family: FontAwesome, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.75rem;
+    line-height: 3rem;
+    color: #fff;
+}
+
+#back-to-top-button:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+
+#back-to-top-button:active {
+    background-color: #555;
+}
+
+#back-to-top-button.show {
+    opacity: 1;
+    visibility: visible;
+}
