@@ -56,8 +56,8 @@
             inset 20px 0 300px #f0f,
             inset -20px 0 300px #0ff,
             0 0 50px #fff,
-            -10px 0 80px #f0f,
-            10px 0 80px #0ff;
+            -10px 0 60px #f0f,
+            10px 0 60px #0ff;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
 }
@@ -78,13 +78,13 @@
 }
 
 .portfolio-card .face.face1 .port-content i {
-    font-size: 3em;
+    font-size: 3rem;
     color: var(--text-black-900);
     display: inline-block;
 }
 
 .portfolio-card .face.face1 .port-content h3 {
-    font-size: 1em;
+    font-size: 1rem;
     color: var(--text-black-900);
     text-align: center;
 }
@@ -122,8 +122,8 @@
     color: black;
     box-sizing: border-box;
     outline : 1px dashed #333;
-    padding: 10px;
-    margin: 15px 0;
+    padding: .75rem;
+    margin: 1rem 0;
     display: block;
     position: fixed;
     top: 68%;

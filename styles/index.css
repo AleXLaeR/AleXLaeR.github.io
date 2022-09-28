@@ -8,7 +8,7 @@
     --text-black-700: #504e70;
     --text-black-900: #302e4d;
 
-    --home-section-color:  #ffe2fb;
+    --home-section-color: #ffe2fb;
     --about-section-color: #dae3ff;
     --portfolio-section-color-1: #dae3ff;
     --portfolio-section-color-2: #ffedf2;
@@ -28,7 +28,7 @@ body.dark {
     --bg-black-900: #151515;
 
     --text-black-700: #e9e9e9;
-    --text-black-900: #ffffff;
+    --text-black-900: #e7e3e3;
 
     --home-section-color: #323131;
     --about-section-color: #393939;
@@ -49,6 +49,8 @@ body {
     padding: 0;
     line-height: 1.5;
     font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
 }
 
 * {
@@ -168,7 +170,7 @@ ul {
     border-left: 5px solid var(--primary-color);
     bottom: 0;
     left: 0;
-    transition:  .3s all ease-in-out;
+    transition: .3s all ease-in-out;
 }
 
 .aside .logo a::after {
@@ -180,7 +182,7 @@ ul {
     border-right: 5px solid var(--primary-color);
     top: 0;
     right: 0;
-    transition:  .3s all ease-in-out;
+    transition: .3s all ease-in-out;
 }
 
 .aside .logo a:hover {
@@ -308,17 +310,12 @@ h3.my-profession {
     text-shadow: 1px 1px 1px black;
 }
 
-.typing:hover {
-    background-position: 0 100%;
-}
-
 .home .home-img {
     flex: 0 0 40%;
     max-width: 40%;
     text-align: center;
     position: relative;
 }
-
 
 .home-info p {
     margin-bottom: 2.5rem;
@@ -334,7 +331,7 @@ h3.my-profession {
     border-bottom: .625rem solid var(--primary-color);
     border-right: .625rem solid var(--primary-color);
     right: 4rem;
-    bottom: -2.5rem;
+    bottom: -1.25rem;
 }
 
 .home-img::before {

@@ -11,7 +11,6 @@
     display: grid;
     place-items: center;
     overflow: hidden;
-    font-family: sans-serif;
     background: linear-gradient(
             0deg, var(--about-section-color), var(--about-section-color)
     );
@@ -50,6 +49,7 @@
     grid-template-columns: 2.5rem auto;
     height: 2.4rem;
     transition: transform 500ms ease, background-color 500ms ease;
+    border-radius: 4px;
 }
 
 .skill ul > li.active {
@@ -90,6 +90,7 @@
     background: #39657e;
     display: grid;
     place-items: center;
+    border-radius: 2px;
 }
 
 .skill .controls button:hover,
@@ -97,8 +98,12 @@
     background: rgb(6, 60, 131);
 }
 
+.skill .controls button:hover {
+    transform: scale(1.02);
+}
+
 .skill .controls button:active {
-    transform: scale(0.9);
+    transform: scale(.9);
 }
 
 .skill .border {
