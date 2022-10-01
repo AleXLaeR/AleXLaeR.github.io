@@ -59,6 +59,8 @@ body {
     outline: none;
     text-decoration: none;
     box-sizing: border-box;
+
+    transition: all .4s linear;
 }
 
 html {
@@ -83,7 +85,7 @@ ul {
     opacity: 1;
 }
 
-.padd-15 {
+.padding-1rem {
     padding-left: 1rem;
     padding-right: 1rem;
 }

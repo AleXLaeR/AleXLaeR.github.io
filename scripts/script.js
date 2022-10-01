@@ -7,6 +7,12 @@ const typed = new Typed(
     }
 );
 
+(
+    function() {
+        emailjs.init('WG93yjJd6nk5tbxLr');
+    }
+)();
+
 const navAnchors = document.querySelectorAll('.aside .nav a');
 const mobileDrawerNavAnchors = document.querySelectorAll('#menuItem a');
 
