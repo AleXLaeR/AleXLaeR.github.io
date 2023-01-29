@@ -34,6 +34,7 @@ dayNightElement.addEventListener('click', () => {
     dayNightElement.querySelector('i').classList.toggle('fa-sun');
     dayNightElement.querySelector('i').classList.toggle('fa-moon');
     document.body.classList.toggle('dark');
+    document.body.classList.toggle('light');
 });
 
 window.addEventListener('load', () => {

@@ -17,6 +17,10 @@
         justify-content: center;
     }
 
+    #university {
+        border-bottom: none;
+    }
+
     .home-info {
         flex: 0 0 100%;
         max-width: 100%;

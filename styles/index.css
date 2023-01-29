@@ -77,12 +77,11 @@ ul {
 
 .home {
     background: linear-gradient(
-        0deg, var(--bg-black-900), var(--home-section-color)
+            0deg, var(--bg-black-900), var(--home-section-color)
     );
     min-height: 100vh;
     display: block;
     padding: 0 2rem;
-    opacity: 1;
 }
 
 .padding-1rem {
@@ -246,20 +245,20 @@ ul {
 }
 
 .aside .nav li {
-    margin-bottom: 1.8rem;
+    margin-bottom: 1.4rem;
+    padding: 4px 0;
     display: block;
+    transition: none;
 }
 
 .aside .nav li:hover {
     background-color: #ffdbe9;
     border-radius: 6px;
-    padding-bottom: .25rem;
 }
 
 body.dark .aside .nav li:hover {
     background-color: #bb6084;
     border-radius: 6px;
-    padding-bottom: .25rem;
 }
 
 .aside .nav li a {
