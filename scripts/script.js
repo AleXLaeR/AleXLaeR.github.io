@@ -1,8 +1,13 @@
 const typed = new Typed(
     ".typing", {
-        strings: ["Freelancer", ".NET Web Developer"],
+        strings: [
+          "Full Stack Web Developer",
+          "Front End Developer",
+          "React.js Developer",
+          "JavaScript Enthusiast",
+        ],
         typeSpeed: 100,
-        BackSpeed: 80,
+        BackSpeed: 90,
         loop: true
     }
 );

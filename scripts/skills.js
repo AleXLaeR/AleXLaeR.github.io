@@ -6,7 +6,7 @@ const softSkills = [
     "Organized Worker",
     "Creative",
     "Passionate about coding",
-    "Adaptive to new environment",
+    "Adaptive",
     "Ready to make changes",
     "Motivated by result",
     "Persistent in reaching goals",
